@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 import './detetive/Evidencia.css';
 import Evidencia from './detetive/Evidencia';
