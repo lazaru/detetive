@@ -3,10 +3,14 @@ version: '3.4'
 services:
   app:
     build: .
-    command: npm run start
+    command: yarn start
+    stdin_open: true
     ports: 
       - "3000:3000"
     volumes:
       - .:/usr/app
-      - /usr/app/node_modules
-    container_name: detetiveApp
+      - node_modules:/usr/app/node_modules
+    container_name: detetive
+volumes:
+  node_modules:
+    driver: local
